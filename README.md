@@ -1,6 +1,8 @@
 # DiscordWebBadge
 Show the status of your discord account to your website.
 
+![image](https://i.imgur.com/hGhBvaH.png)
+
 ## How to use
 1: Join our discord Server.
 
