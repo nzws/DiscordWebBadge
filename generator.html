@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset=utf-8>
+  <meta content=width=device-width,initial-scale=1 name=viewport>
+  <title>HTML Tag Generator - Discord Web Badge</title>
+</head>
+<body>
+<h2>HTML Tag Generator - Discord Web Badge</h2>
+<p>
+  Source code: <a href="https://github.com/yuzulabo/DiscordWebBadge">yuzulabo/DiscordWebBadge</a>
+</p>
+<p>
+  Your discord gamer tag<br>
+  <input id="tag" value="nzws#1203" style="width: 50%" onkeyup="generate()" type="text">
+</p>
+<p>
+  HTML tag:<br>
+  <textarea id="result" style="width: 50%" rows="10" readonly></textarea>
+</p>
+<script>
+  function generate() {
+    const tag = encodeURIComponent(document.getElementById("tag").value);
+    document.getElementById("result").value = `<iframe src="https://discordbg.nzws.me/badge.html?${tag}" style="width:250px;height:30px;" frameborder="0" scrolling="no"></iframe>`;
+  }
+  generate();
+</script>
+</body>
+</html>
